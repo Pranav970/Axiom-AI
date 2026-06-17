@@ -215,10 +215,7 @@ To trigger the **fallback path** (Irrelevant -> Rewrite -> Web Search) to test t
 
 ***
 
-### Key Changes Made for Production Style:
-* **Clean Architectural Chart**: Uses an intuitive layout diagram mapping loops explicitly so anyone checking the repo understands the node connections immediately.
-* **Production Badges**: Pre-configured shields showcasing your technology stack dependencies.
-* **Strict JSON/Bash Blocks**: Copy-pasteable execution examples to make running the code trivial.
+
 
 
 
