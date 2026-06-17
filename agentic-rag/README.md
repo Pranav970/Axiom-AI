@@ -23,7 +23,7 @@ uvicorn app.main:app --reload --port 8000
 ```
 ------
 
-## Try it
+## Try it 👉
 # First turn — start a new session
 ```bash
 curl -s -X POST http://localhost:8000/chat \
@@ -46,3 +46,36 @@ curl -s -X POST http://localhost:8000/chat \
 ```bash
 curl -s http://localhost:8000/session/<paste-id>/history | jq
 ```
+---
+
+## 3. Execution Instructions 
+
+```bash
+# 1. Clone / create the project and enter it
+cd agentic-rag
+
+# 2. Create an isolated environment
+python -m venv .venv
+source .venv/bin/activate                # macOS/Linux
+# .venv\Scripts\activate                 # Windows PowerShell
+
+# 3. Install dependencies (pinned for reproducibility)
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# 4. Configure secrets
+cp .env.example .env
+# edit .env and set ANTHROPIC_API_KEY=sk-ant-...
+
+# 5. Ingest the sample corpus (semantic chunking into ChromaDB)
+python -m app.vectorstore.ingest --path ./data --reset
+
+# 6. Start the API
+uvicorn app.main:app --reload --port 8000
+
+# 7. Smoke-test
+curl -X POST http://localhost:8000/chat \
+  -H 'content-type: application/json' \
+  -d '{"question":"What is Corrective RAG?"}'
+```
+
