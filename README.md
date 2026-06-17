@@ -19,16 +19,11 @@ An enterprise-grade, asynchronous **Corrective Retrieval-Augmented Generation (C
 
 The workflow models complex multi-step reasoning as a stateful, cyclic directed graph via **LangGraph**:
 
-
-```
-
 ```
     🚀 START
        │
        ▼
 ┌──────────────┐
-
-```
 
 ──>│   Retrieve   │
 │   └──────┬───────┘
@@ -218,7 +213,6 @@ To trigger the **fallback path** (Irrelevant -> Rewrite -> Web Search) to test t
 
 🏁 **Developed with ❤️ using Python, LangGraph and Claude 3.5.**
 
-```
 ***
 
 ### Key Changes Made for Production Style:
@@ -226,7 +220,7 @@ To trigger the **fallback path** (Irrelevant -> Rewrite -> Web Search) to test t
 * **Production Badges**: Pre-configured shields showcasing your technology stack dependencies.
 * **Strict JSON/Bash Blocks**: Copy-pasteable execution examples to make running the code trivial.
 
-```
+
 
 
 
