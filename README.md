@@ -3,7 +3,7 @@ Production-Grade Agentic RAG &amp; Multi-Agent Orchestration (LangGraph, Pydanti
 
 ---
 
-```markdown
+markdown
 # 🤖 Production Agentic RAG Framework
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -227,3 +227,7 @@ To trigger the **fallback path** (Irrelevant -> Rewrite -> Web Search) to test t
 * **Strict JSON/Bash Blocks**: Copy-pasteable execution examples to make running the code trivial.
 
 ```
+
+
+
+
