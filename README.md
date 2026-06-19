@@ -21,14 +21,14 @@ The workflow models complex multi-step reasoning as a stateful, cyclic directed 
 
 ```
     🚀 START
-       │
-       ▼
-┌──────────────┐
+         │
+         ▼
+   ┌──────────────┐
 
 ──>│   Retrieve   │
 │  └──────┬───────┘
-│          │
-│          ▼
+│         │
+│         ▼
 │   ┌──────────────┐
 │   │    Grade     │
 │   └──────┬───────┘
