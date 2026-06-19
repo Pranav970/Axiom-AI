@@ -26,7 +26,7 @@ The workflow models complex multi-step reasoning as a stateful, cyclic directed 
 ┌──────────────┐
 
 ──>│   Retrieve   │
-│   └──────┬───────┘
+│  └──────┬───────┘
 │          │
 │          ▼
 │   ┌──────────────┐
@@ -41,7 +41,7 @@ The workflow models complex multi-step reasoning as a stateful, cyclic directed 
 │          ▼                                              │
 │   ┌──────────────┐                               ┌──────────────┐
 └───│   Rewrite    │                               │  Web Search  │
-└──────────────┘                               └──────▲───────┘
+    └──────────────┘                               └──────▲───────┘
 │
 [ Irrelevant & Exhausted ]
 
